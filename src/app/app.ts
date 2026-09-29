@@ -9,4 +9,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('angularApp');
+  napis=signal<string>("")
+
+  OnBtnClicked()
+  {
+    this.napis.set("O BOZE TO TEZ DZIALA")
+  }
 }
